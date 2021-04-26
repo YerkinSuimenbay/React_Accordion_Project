@@ -1,0 +1,199 @@
+/*
+=============== 
+Variables
+===============
+*/
+/* dark shades of primary color*/
+/* primary/main color */
+/* lighter shades of primary color */
+/* darkest grey - used for headings */
+/* grey used for paragraphs */
+/*
+=============== 
+Global Styles
+===============
+*/
+*,
+::after,
+::before {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue";
+  background: #1fa146;
+  color: #102a42;
+  line-height: 1.5;
+  font-size: 0.875rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  letter-spacing: 0.1rem;
+  text-transform: capitalize;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+h1 {
+  font-size: 3rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+h4 {
+  font-size: 0.875rem;
+}
+
+p {
+  margin-bottom: 1.25rem;
+  color: #617d98;
+}
+
+button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  font-size: 1rem;
+}
+
+i {
+  pointer-events: none;
+}
+
+@media screen and (min-width: 800px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 2.5rem;
+  }
+  h3 {
+    font-size: 1.75rem;
+  }
+  h4 {
+    font-size: 1rem;
+  }
+  body {
+    font-size: 1rem;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    line-height: 1;
+  }
+}
+
+/*  global classes */
+main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  padding: 6rem 0;
+}
+
+.container {
+  width: 90vw;
+  max-width: 900px;
+  background-color: white;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 2fr;
+      grid-template-columns: 1fr 2fr;
+  padding: 2.5rem;
+  border-radius: 0.25rem;
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.container .title {
+  font-weight: 400;
+}
+
+.single-qa {
+  -webkit-box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  padding: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.single-qa .question-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.single-qa .question-container .question {
+  margin-bottom: 0;
+}
+
+.single-qa .question-container .btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #1f9459;
+  background-color: #dfdbdb;
+  font-size: 1.3rem;
+  border-radius: 0.25rem;
+}
+
+.single-qa .answer {
+  margin-bottom: 0;
+  margin-top: 0.75rem;
+}
+
+@media screen and (max-width: 1000px) {
+  main {
+    padding: 2rem 0;
+  }
+  .container {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 0.5rem;
+  }
+  .container .title {
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=main.css.map */

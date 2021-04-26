@@ -1,0 +1,66 @@
+@import "configs";
+
+main {
+    @include flexCenter();
+    min-height: 100vh;
+    padding: 6rem 0;
+
+}
+
+.container {
+    width: 90vw;
+    max-width: 900px;
+    background-color: white;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    padding: 2.5rem;
+    border-radius: $radius;
+    box-shadow: $dark-shadow;
+
+    .title {
+        font-weight: 400;
+    }
+}
+
+.single-qa {
+    box-shadow: $dark-shadow;
+    padding: 1.5rem;
+    margin-bottom: 1rem;
+
+    .question-container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .question {
+            margin-bottom: 0;
+        }
+
+        .btn {
+            @include flexCenter();
+            color: rgb(31, 148, 89);
+            background-color: rgb(223, 219, 219);
+            font-size: 1.3rem;
+            //border: 2px solid;
+            border-radius: $radius;
+        }
+    }
+
+    .answer {
+        margin-bottom: 0;
+        margin-top: 0.75rem;
+    }
+}
+@media screen and (max-width: 1000px) {
+    main {
+        padding: 2rem 0;
+    }
+    .container {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+
+        .title {
+            text-align: center;
+        }
+    }
+}
